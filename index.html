@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Ahire </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- main js file -->
+    <script src="main.js"></script>
+
+    <!-- typed js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- email messaging service -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    
+</head>
+
+
+<body>
+    
+<!-- scroll to top button -->
+    <button type="button" id="btn" onclick="scrolltoTop()" class="scrollbtn"> <i class="fa fa-arrow-up"></i></button>
+
+            <nav class="navbar" id="navbar">
+                <div class="logo">
+                    <a href="#home">Portfolio</a>
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+                    <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+                <div class="menu-btn" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+
+<!-- home start here -->
+
+<section class="home" id="home">
+  <div class="home-content">
+    <div class="text-content">
+      <h3>I'm</h3>
+      <h1 class="name">Piyush Ahire</h1>
+      <hr class="underline" />
+      <p class="typing-text">
+        <span class="typing"></span>
+      </p>
+      <p class="description">
+        A freelancer who provides services for programming and design content needs,
+        for all businesses with more than 2 years of experience.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="image-content">
+      <img src="images/piyu.jpg" alt="Piyush Ahire" />
+    </div>
+  </div>
+</section>
+
+    
+<!-- about start here -->
+            <section class="about" id="about">
+            <div class="container">
+                
+                <!-- Card 1: Personal Info -->
+                <div class="about-card">
+                <div class="about-left">
+                    <img src="images/PiyushA.png" alt="Piyush Ahire">
+                </div>
+                <div class="about-right">
+                    <h5>Personal Info</h5>
+                    <p><strong>Name:</strong> Piyush Ahire</p>
+                    <p><strong>Profile:</strong> Java Full Stack Developer</p>
+                    <p><strong>Email:</strong> piyushahire2609@example.com</p>
+                    <p><strong>Phone:</strong> 8806713450</p>
+                </div>
+                </div>
+
+                <!-- Card 2: About Me -->
+                <div class="about-card">
+                <div class="about-right full">
+                    <h5>About Me</h5>
+                    <p>
+                    Aspiring <strong>Java Full Stack Developer</strong> with strong knowledge in Java, HTML, CSS, JavaScript, SQL, and experience using AWS Cloud and Git/GitHub. Passionate about building responsive UIs and scalable backend systems. Fast learner, good at problem-solving, and excited to contribute to real-world, agile projects.
+                    </p>
+                </div>
+                </div>
+
+                <!-- Card 3: Skills -->
+                <div class="about-card">
+                <div class="about-right full">
+                    <h5>Skills</h5>
+
+                    <!-- Frontend -->
+                    <h6 class="category-heading">Frontend Technologies</h6>
+                    <div class="skills-grid">
+                    <div class="skill-card" data-percent="95%"><i class="fa fa-html5"></i><span>HTML</span></div>
+                    <div class="skill-card" data-percent="90%"><i class="fa fa-css3"></i><span>CSS</span></div>
+                    <div class="skill-card" data-percent="80%"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                    </div>
+
+                    <!-- Backend -->
+                    <h6 class="category-heading">Backend Technologies</h6>
+                    <div class="skills-grid">
+                    <div class="skill-card" data-percent="85%"><i class="fa fa-code"></i><span>Java</span></div>
+                    </div>
+
+                    <!-- Database -->
+                    <h6 class="category-heading">Database</h6>
+                    <div class="skills-grid">
+                    <div class="skill-card" data-percent="90%"><i class="fa fa-database"></i><span>MySQL</span></div>
+                    </div>
+
+                    <!-- Others -->
+                    <h6 class="category-heading">Other Technologies (Basics)</h6>
+                    <div class="skills-grid">
+                    <div class="skill-card" data-percent="60%"><i class="fa-brands fa-aws"></i><span>AWS Cloud</span></div>
+                    <div class="skill-card" data-percent="70%"><i class="fa-brands fa-github"></i><span>Git & GitHub</span></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </section>
+
+
+
+<!-- resume start here -->
+<section class="resume" id="resume">
+  <div class="container">
+    <h3 class="title">Resume</h3>
+    <div class="line"></div>
+    <div class="resume-card">
+      <div class="resume-content">
+        <h4>Download My Resume</h4>
+        <p>Click below to download the latest version of my resume.</p>
+        <a href="resume/Piyush Ahire.pdf" download class="download-btn">
+          <i class="fa fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- resume END here -->
+
+
+
+<!-- services start here
+    <section class="services" id="services">
+        <div class="container">
+            <h3 class="title">Services</h3>
+            <div class="line"></div>
+            <div class="services-content">
+
+
+                 <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-code"></i></div>
+                        <div class="card-title">Web Development</div>
+                        <p>Lorem ipsum dolor sit amet connecter adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-mobile"></i></div>
+                        <div class="card-title">App Development</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-paint-brush"></i></div>
+                        <div class="card-title">Web Design </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-laptop"></i></div>
+                        <div class="card-title">Responsive Design </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-line-chart"></i></div>
+                        <div class="card-title">Advertising </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-wordpress"></i></div>
+                        <div class="card-title">Wordpress</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>-->
+<!-- Services start here -->
+
+
+<!-- portfolio start here -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h3 class="title">Portfolio</h3>
+            <div class="line"></div>
+            <div class="portfolio-content">
+                <div class="card">
+                    <div class="content">
+                        <div class="photo">
+                            <img src="images/work-1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Project 1</h3>
+                            <p> <span class="category">Web Design</span> / 20 Apr 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="images/work-2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Project 2</h3>
+                        <p> <span class="category">Web Design</span> / 18 May 2020</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="images/work-3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Project 3</h3>
+                        <p> <span class="category">Web Design</span> / 10 Jan 2020</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="images/work-4.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Project 4</h3>
+                        <p> <span class="category">Web Design</span> / 16 May 2019</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="images/work-5.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Project 5</h3>
+                        <p> <span class="category">Web Design</span> / 15 Oct 2019</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="images/work-6.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Project 6</h3>
+                        <p> <span class="category">Web Design</span> / 4 Dec 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+<!-- portfolio end here -->
+
+<!-- blog start here -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h3 class="title">Blog</h3>
+            <div class="line"></div>
+            <div class="blog-content">
+                
+                <a href="https://codecraftbypiyush.hashnode.dev/my-journey-into-java-full-stack-development-from-diploma-to-deployments" style="text-decoration: none; color: inherit;" target="_blank">
+                    <div class="card">
+                        <div class="content">
+                            <div class="photo">
+                                <img src="images/codecraft.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>CodeCraft by Piyush</h3>
+                                <div class="category">Dev Journey</div>
+                                <p>CodeCraft by Piyush shares my journey in full stack development, projects, and tech tips!</p>
+                            </div>
+                            <div class="author">
+                                <div class="name">
+                                    <img src="images/Piyushicon.jpeg" alt="">
+                                    <p>Piyush Ahire</p>
+                                </div>
+                                <div class="date">
+                                    <p>3 June 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://skillscript.hashnode.dev/how-to-create-a-login-page-in-htmlcssjs" style="text-decoration: none; color: inherit;" target="_blank">
+                    <div class="card">
+                        <div class="content">
+                            <div class="photo">
+                                <img src="images/script.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Skill Script</h3>
+                                <div class="category">Web Development</div>
+                                <p>SkillScript is a blog that delivers step-by-step coding tutorials with clean design, practical code, and real-world use cases!</p>
+                            </div>
+                            <div class="author">
+                                <div class="name">
+                                    <img src="images/Piyushicon.jpeg" alt="">
+                                    <p>Piyush Ahire</p>
+                                </div>
+                                <div class="date">
+                                    <p>17 Aug 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://wherefaithmeetsforest.hashnode.dev/where-faith-meets-forest" style="text-decoration: none; color: inherit;" target="_blank">
+                    <div class="card">
+                        <div class="content">
+                            <div class="photo">
+                                <img src="images/travel-photom.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Where faith meet forest</h3>
+                                <div class="category">Travel</div>
+                                <p>A soul-refreshing journey through winding ghats, ancient chants, misty forests, and lifelong memories!</p>
+                            </div>
+                            <div class="author">
+                                <div class="name">
+                                    <img src="images/Piyushicon.jpeg" alt="">
+                                    <p>Piyush Ahire</p>
+                                </div>
+                                <div class="date">
+                                    <p>27 Nov 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+<!-- blog start here -->
+
+
+ <!-- contact start here -->
+    <section class="contact" id="contact">
+        <div class="overlay"></div>
+          <div class="container">
+            <div class="contact-content">
+                    <div class="message">
+                        <form id="contact-form">
+                            <h3 class="heading">Send Message </h3>
+                            <div class="line"></div>
+                            <div class="field">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="field">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="field">
+                                <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+
+                <div class="gettouch">
+                    <h3 class="heading">Get in Touch</h3>
+                    <div class="line"></div>
+                    <p></p>
+                    <div class="info"><i class="fa fa-map-marker"></i>Pune, Maharahtra-411057</div>
+                    <div class="info"><i class="fa fa-phone"></i>8806713450</div>
+                    <div class="info"><i class="fa fa-envelope"></i>piyushahire@gmail.com</div>
+                   
+                    <div class="social">
+                        <a href="https://www.facebook.com/piyush_a_269" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/piyush_a_269/" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/piyusha269/" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/piyusha269" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- contact end here-->
+
+  <footer class="footer">
+            <p>© Copyright | All Rights Reserved | Piyush Ahire</p>
+            </footer>
+
+</body>
+</html>
