@@ -13,7 +13,6 @@ This project showcases my skills, projects, and experience as a developer.
 
 ## 🖥️ Features
 
-- Interactive homepage with typing animation
 - About me section with details and image
 - Skills section with hover effects
 - Resume download option
