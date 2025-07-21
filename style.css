@@ -20,7 +20,7 @@ body{
 }
 
 section{
-    padding: 80px 0;
+    padding: 20px  ;
 }
 
 .title{
@@ -46,6 +46,8 @@ section{
     display: none;
 }
 
+
+/* scroll to top button styling */
 .scrollbtn{
     display: none;
     height: 40px;
@@ -53,7 +55,7 @@ section{
     position: fixed;
     right: 20px;
     bottom: 40px;
-    background: #E3D4AD;
+    background: #ffffff;
     padding: 8px;
     border: none;
     outline: none;
@@ -66,7 +68,7 @@ section{
 .scrollbtn i{
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: rgb(79, 1, 1);
 }
 
 /* navbar styling */
@@ -77,18 +79,21 @@ section{
     align-items: center;
     justify-content: space-between;
     background-color: #111;
-    padding: 2rem 8rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px ;
+    padding-left: 10px;
     z-index: 500;
     transition: 0.4s;
-}
+    }
 
 .navbar.sticky{
     position: fixed;
     top: 0;
     width: 100%;
-    background: white;
-    color: #E3D4AD;
-    padding: 1.1rem 8rem;
+    background: rgb(255, 255, 255);
+    color: #ffffff;
+    /* padding: 1.1rem 8rem; */
     box-shadow: 0px 6px 9px 0px rgb(0 0 0 / 6%);
 }
 
@@ -100,7 +105,7 @@ section{
 }
 
 .navbar.sticky .logo a{
-    color: #E3D4AD;
+    color: #ffffff;
 }
 
 .navbar .menu li{
@@ -108,6 +113,7 @@ section{
     display: inline-block;
     margin-left: 35px;
     position: relative;
+    padding: 5px 5px;
 }
 
 .navbar .menu li a{
@@ -117,6 +123,13 @@ section{
     text-transform: uppercase;
     color: white;
     font-weight: 600;
+
+}
+
+.navbar .menu li a:hover{
+    color: #f9d342;
+    transition: 0.2s;
+    
 }
 
 .navbar .menu li a::before{
@@ -127,23 +140,27 @@ section{
     bottom: -10px;
     height: 2px;
     transition: 0.2s;
-    background: white;
+    background: rgb(0, 0, 0);
 }
 
 .navbar .menu li a:hover::before{
     width: 35px;
 }
 .navbar.sticky .menu li a{
-    color: #E3D4AD;
+    color: #000000;
 }
 
 .navbar.sticky .menu li a::before{
-    background: #E3D4AD;
+    background: #000000;
 }
+
+
+/* Home section styling */
 
 .home {
   width: 100%;
-  padding: 80px 10%;
+  padding: 130px 10%;
+  background-color: rgb(23, 16, 30);
 }
 
 .home-content {
@@ -206,7 +223,8 @@ section{
 }
 
 .image-content img {
-  width: 300px;
+  width: 500px;
+
   border-radius: 12px;
   object-fit: cover;
   animation: float 4s ease-in-out infinite;
@@ -244,8 +262,9 @@ section{
 .about-content{
     background: white;
     width: 100%;
-    padding: 2.5rem 3rem;
+    padding-top:  10px;
     display: flex;
+    margin: 5px;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
 }
 
@@ -316,6 +335,7 @@ section{
 .skill-card {
     background: #fff;
     border-radius: 12px;
+    width: 50px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     padding: 25px 20px;
     text-align: center;
@@ -488,22 +508,26 @@ section{
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     gap: 20px;
     margin-bottom: 20px;
+   
 }
 
 .skill-card {
     background-color: #ffeee2;
     border-radius: 12px;
     border: #000000 solid 2px;
-    padding: 25px 20px;
+    padding: 5px 5px;
+    margin: 5px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
     overflow: hidden;
     cursor: default;
     color: #111;
+    height: 80px;
+
 }
 
 .skill-card:hover {
@@ -556,12 +580,11 @@ section{
     color: #000000;
 
     /* Equal sizing */
-    min-height: 40px;
-    min-width: 100px;
+    min-height:20px;
+    min-width: 60px;
     display: flex;
+    align-self: start;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -580,6 +603,15 @@ section{
 
 .download-btn:hover {
     background-color: #650d19;
+}
+.resume{
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+   margin-left: 200px;
+   margin-right: 200px;
+   background-color: #ffffff;
+   margin-top: -40px;
+   z-index: 100;
 }
 
 .resume-card {
@@ -741,6 +773,8 @@ section{
 .blog-content .card .author .name{
     display: flex;
     align-items: center;
+    font-size:medium;
+    color: #000;
 }
 
 .blog-content .card .author .name img{
@@ -1083,7 +1117,7 @@ section{
 
 /* Footer and other sections styling */
 
-.navbar, {
+.navbar {
     background-color: #000000;
 }
 .footer {
