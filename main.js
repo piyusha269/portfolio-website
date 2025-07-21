@@ -73,3 +73,17 @@ function toggleMenu() {
     });
 
 
+// // Toggle skills table visibility
+// function toggleSkills() {
+//   const table = document.getElementById("skillsTable");
+//   const button = document.querySelector(".toggle-btn");
+
+//   table.classList.toggle("collapsed");
+
+//   if (table.classList.contains("collapsed")) {
+//     button.textContent = "Show More";
+//   } else {
+//     button.textContent = "Show Less";
+//   }
+// }
+

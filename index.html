@@ -37,8 +37,9 @@
                 <ul class="menu" id="menu">
                     <li><a href="#home" onclick="toggleMenu()">Home</a></li>
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#services" onclick="toggleMenu()">Services</a></li>
-                    <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+                    <!-- <li><a href="#services" onclick="toggleMenu()">Services</a></li> -->
+                    <!-- <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li> -->
+                    <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>   
                     <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </ul>
@@ -54,19 +55,18 @@
     <div class="text-content">
       <h3>I'm</h3>
       <h1 class="name">Piyush Ahire</h1>
-      <hr class="underline" />
+      <!-- <hr class="underline" /> -->
       <p class="typing-text">
         <span class="typing"></span>
       </p>
       <p class="description">
-        A freelancer who provides services for programming and design content needs,
-        for all businesses with more than 2 years of experience.
+        HTML | CSS | JavaScript | Java | MySQL | AWS Cloud | Git/GitHub 
       </p>
       <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/piyush_a_269" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/piyush_a_269/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/piyusha269/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/piyusha269" target="_blank"><i class="fab fa-github"></i></a>
       </div>
     </div>
     <div class="image-content">
@@ -108,42 +108,43 @@
                 <div class="about-card">
                 <div class="about-right full">
                     <h5>Skills</h5>
-
+                
                     <!-- Frontend -->
+                    <div class="skills-table">
+                <!-- Table Headers -->
+                <div class="skill-column">
                     <h6 class="category-heading">Frontend Technologies</h6>
-                    <div class="skills-grid">
-                    <div class="skill-card" data-percent="95%"><i class="fa fa-html5"></i><span>HTML</span></div>
-                    <div class="skill-card" data-percent="90%"><i class="fa fa-css3"></i><span>CSS</span></div>
+                    <div class="skill-card" data-percent="95%"><i class="fa-brands fa-html5"></i></i><span>HTML</span></div>
+                    <div class="skill-card" data-percent="90%"><i class="fa-brands fa-css3"></i></i></i><span>CSS</span></div>
                     <div class="skill-card" data-percent="80%"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
-                    </div>
+                </div>
 
-                    <!-- Backend -->
+                <div class="skill-column">
                     <h6 class="category-heading">Backend Technologies</h6>
-                    <div class="skills-grid">
                     <div class="skill-card" data-percent="85%"><i class="fa fa-code"></i><span>Java</span></div>
-                    </div>
+                </div>
 
-                    <!-- Database -->
-                    <h6 class="category-heading">Database</h6>
-                    <div class="skills-grid">
+                <div class="skill-column">
+                    <h6 class="category-heading">Database </h6>
                     <div class="skill-card" data-percent="90%"><i class="fa fa-database"></i><span>MySQL</span></div>
-                    </div>
+                </div>
 
-                    <!-- Others -->
-                    <h6 class="category-heading">Other Technologies (Basics)</h6>
-                    <div class="skills-grid">
+                <div class="skill-column">
+                    <h6 class="category-heading">Other Technologies</h6>
                     <div class="skill-card" data-percent="60%"><i class="fa-brands fa-aws"></i><span>AWS Cloud</span></div>
                     <div class="skill-card" data-percent="70%"><i class="fa-brands fa-github"></i><span>Git & GitHub</span></div>
-                    </div>
+                </div>
+                </div>
+            
+
                 </div>
                 </div>
             </div>
             </section>
 
 
-
 <!-- resume start here -->
-<section class="resume" id="resume">
+<section class="resume" id="resume" z-index="100">
   <div class="container">
     <h3 class="title">Resume</h3>
     <div class="line"></div>
@@ -219,7 +220,7 @@
 
 
 <!-- portfolio start here -->
-    <section class="portfolio" id="portfolio">
+    <!-- <section class="portfolio" id="portfolio">
         <div class="container">
             <h3 class="title">Portfolio</h3>
             <div class="line"></div>
@@ -282,7 +283,7 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>  -->
 <!-- portfolio end here -->
 
 <!-- blog start here -->
@@ -296,7 +297,7 @@
                     <div class="card">
                         <div class="content">
                             <div class="photo">
-                                <img src="images/codecraft.png" alt="">
+                                <img src="images/work-4.jpg" alt="">
                             </div>
                             <div class="info">
                                 <h3>CodeCraft by Piyush</h3>
@@ -319,7 +320,7 @@
                     <div class="card">
                         <div class="content">
                             <div class="photo">
-                                <img src="images/script.jpg" alt="">
+                                <img src="images/work-6.jpg" alt="">
                             </div>
                             <div class="info">
                                 <h3>Skill Script</h3>
@@ -399,20 +400,20 @@
                     <p></p>
                     <div class="info"><i class="fa fa-map-marker"></i>Pune, Maharahtra-411057</div>
                     <div class="info"><i class="fa fa-phone"></i>8806713450</div>
-                    <div class="info"><i class="fa fa-envelope"></i>piyushahire@gmail.com</div>
+                    <div class="info"><i class="fa fa-envelope"></i>piyushahire2609@gmail.com</div>
                    
                     <div class="social">
                         <a href="https://www.facebook.com/piyush_a_269" target="_blank">
-                            <i class="fa fa-facebook"></i>
+                            <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="https://www.instagram.com/piyush_a_269/" target="_blank">
-                            <i class="fa fa-instagram"></i>
+                            <i class="fab fa-instagram"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/piyusha269/" target="_blank">
-                            <i class="fa fa-linkedin"></i>
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://github.com/piyusha269" target="_blank">
-                            <i class="fa fa-github"></i>
+                            <i class="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
