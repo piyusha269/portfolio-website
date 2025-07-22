@@ -23,7 +23,15 @@ section{
     padding: 10px  ;
 }
 
-.title{
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000000;
+}
+.blog .title {
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
@@ -530,7 +538,7 @@ section{
 /* === SKILLS INSIDE CARD 3 === */
 .category-heading {
     font-size: 20px;
-    margin: 30px 0 15px;
+    margin: 20px 0 15px;
     color: #800020;
     font-weight: 600;
     border-left: 5px solid #800020;
@@ -618,6 +626,66 @@ section{
     flex-direction : column;
 }
 
+/* Education  Cards */
+.education-section {
+    padding: 30px 20px;
+    margin: 20px auto;
+    background: transparent;
+    color: #fff;
+}
+
+.education-section .title {
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+}
+
+.education-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.edu-card {
+    background: #ffffff;
+    color: #111;
+    padding: 30px 25px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.edu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 35px rgba(0,0,0,0.3);
+}
+
+.edu-card h4 {
+    font-size: 20px;
+    color: #800020;
+    margin-bottom: 10px;
+}
+
+.edu-card p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.edu-card span {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #444;
+}
+
 
 /* resume section styling */
 .download-btn {
@@ -635,35 +703,44 @@ section{
 .download-btn:hover {
     background-color: #650d19;
 }
-
 .resume {
-    padding: 40px 20px;
-    margin: 10px auto; /* Top and bottom spacing from other sections */
+    padding: 20px 20px;
+    margin: 30px auto;
     border-radius: 15px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
-    width: 60%; /* keeps it centered and clean */
+    width: 90%;
+    max-width: 800px;  /* Ensures it's centered and limited in width */
+    box-sizing: border-box;
 }
-
 
 .resume-card {
     margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .resume-content {
     background: #fff;
     padding: 40px 30px;
-    width: 90%;
+    width: 100%;
     max-width: 500px;
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
     transform: perspective(1000px) rotateX(2deg);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-sizing: border-box;
 }
+
+.resume-content:hover {
+    transform: perspective(1000px) rotateX(0deg) scale(1.02);
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
+}
+
 
 .resume-content:hover {
     transform: perspective(1000px) rotateX(0deg) scale(1.02);
@@ -683,10 +760,10 @@ section{
 }
 
 
-
+/* 
 
 /* portfolio section styling */
-.portfolio-content{
+/* .portfolio-content{
     margin-top: 2rem;
     justify-content: space-around;
     display: flex;
@@ -729,7 +806,7 @@ section{
 
 .portfolio-content .card .info .category{
     color: #650d19;
-}
+} */
 
 
 
@@ -813,7 +890,7 @@ section{
     width: 30px;
     margin-right: 10px;
     border-radius: 50%;
-}
+} 
 
 
 
@@ -942,7 +1019,9 @@ section{
      color: #ffbf00;
     transform: translateY(-10px);
 }
-
+.social a {
+    text-decoration: none;
+}
 
 
 /* footer styling */
